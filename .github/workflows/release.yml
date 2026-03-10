@@ -1,0 +1,43 @@
+name: Auto Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Pull LFS objects
+        run: git lfs pull
+
+      - name: Resolve version from tag
+        id: meta
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Verify release files exist
+        run: |
+          test -f "Moe-${{ steps.meta.outputs.version }}-win-x64.exe"
+          test -f "Moe-${{ steps.meta.outputs.version }}-win-x64.exe.blockmap"
+          test -f "latest.yml"
+
+      - name: Create release and upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
+          files: |
+            Moe-${{ steps.meta.outputs.version }}-win-x64.exe
+            Moe-${{ steps.meta.outputs.version }}-win-x64.exe.blockmap
+            latest.yml
