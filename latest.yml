@@ -1,0 +1,8 @@
+version: 1.0.2
+files:
+  - url: Moe-1.0.2-win-x64.exe
+    sha512: IxbM4NW1oLTB4FOrF7sg1Q4ZCi8aweuPd4oopnFIxq7Yyy/4W0ubXJDVE7pB3E6wRoLGETRs+iVuw9oaCQzxtw==
+    size: 205429364
+path: Moe-1.0.2-win-x64.exe
+sha512: IxbM4NW1oLTB4FOrF7sg1Q4ZCi8aweuPd4oopnFIxq7Yyy/4W0ubXJDVE7pB3E6wRoLGETRs+iVuw9oaCQzxtw==
+releaseDate: '2026-03-10T08:06:17.525Z'
