@@ -1,8 +1,8 @@
-version: 1.1.1
+version: 1.1.2
 files:
-  - url: Moe-1.1.1-win-x64.exe
-    sha512: Ju4FydvqZGycEfmnZsSWBZsVbeqEEmqjDA2PrdokcHCq0NW9f+on7xkQC5fzWGwkvj18l/bpncpl+ZbNZuT41w==
-    size: 207191951
-path: Moe-1.1.1-win-x64.exe
-sha512: Ju4FydvqZGycEfmnZsSWBZsVbeqEEmqjDA2PrdokcHCq0NW9f+on7xkQC5fzWGwkvj18l/bpncpl+ZbNZuT41w==
-releaseDate: '2026-03-18T10:36:10.375Z'
+  - url: Moe-1.1.2-win-x64.exe
+    sha512: tANXx/lg/D8F4SAd+10zwyPtuMo3PdQ8RS46B+oDzneT6sAuPHFb/yFyOIMCjXW37wgcoIcpBr4v8bcZYdahSw==
+    size: 207193317
+path: Moe-1.1.2-win-x64.exe
+sha512: tANXx/lg/D8F4SAd+10zwyPtuMo3PdQ8RS46B+oDzneT6sAuPHFb/yFyOIMCjXW37wgcoIcpBr4v8bcZYdahSw==
+releaseDate: '2026-03-18T11:48:59.362Z'
